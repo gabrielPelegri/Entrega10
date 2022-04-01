@@ -1,4 +1,12 @@
-Ejercicios Entrega 10
+Ejercicios realizados por:
+
+- Gabriel Pelegri Riis
+
+- Victor Navarro Carrillo
+
+- David César Moro Nieto
+
+Ejercicios Tema 10 de Técnicas de programación
 1. El cálculo de la raíz cuadrada
 Sea la función raizCuadrada() que calcula la raíz cuadrada del número que se pasa como argumento. Esta función lanza una excepción si su argumento es negativo. No se le pide que escriba esta función, se asume que ya existe.
 
