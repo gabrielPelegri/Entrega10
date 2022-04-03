@@ -14,13 +14,22 @@ public class Ejercicio1 {
             } catch (InputMismatchException e) {
                 teclado.next();
             }
-            if (numero < 0) {
-                throw new RaizNegativaException("La raíz cuadrada no está definida para un número negativo");
-            } else {
-                System.out.println("Resultado: " + numero);
+            try {
+                RaizCuadrada(numero);
+            } catch (RaizNegativaException e) {
+                System.out.println("La raíz cuadrada no está definida para un número negativo");
             }
 
         }
 
+    }
+
+    private static void RaizCuadrada(double a) {
+        if (a < 0) {
+            throw new RaizNegativaException();
+        } else {
+            double raiz = Math.sqrt(a);
+            System.out.println("El resultado es: " + raiz);
+        }
     }
 }
