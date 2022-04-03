@@ -3,8 +3,6 @@ package Entrega10.src;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import javax.annotation.processing.SupportedOptions;
-
 public class Ejercicio2 {
     public static void Lanzar(Scanner teclado) {
 
