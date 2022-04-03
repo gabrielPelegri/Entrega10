@@ -28,4 +28,7 @@ public class Operacion {
     public int Multiplicaion(int a, int b) throws DesbordaCapacidadException {
         return a * b;
     }
+    public int Dividir(int a, int b) throws DesbordaCapacidadException {
+        return a/b;
+    }
 }
