@@ -46,7 +46,7 @@ public class Ejercicio2 {
                     } catch (InputMismatchException e) {
                         teclado.next();
                     }
-                    System.out.println("Introduce otro unnúmero");
+                    System.out.println("Introduce otro número");
                     try {
                         b = teclado.nextInt();
                     } catch (InputMismatchException e) {
