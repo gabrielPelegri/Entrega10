@@ -15,7 +15,7 @@ public class Ejercicio1 {
                 teclado.next();
             }
             if (numero < 0) {
-                throw new RaizNegativaException();
+                throw new RaizNegativaException("La raíz cuadrada no está definida para un número negativo");
             } else {
                 System.out.println("Resultado: " + numero);
             }
