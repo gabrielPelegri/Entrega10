@@ -17,7 +17,7 @@ public class Operacion {
         }
     }
 
-    public int Suma(int a, int b) throws DesbordaCapacidadException {
+    public static int Suma(int a, int b) throws DesbordaCapacidadException {
         return a + b;
     }
 
@@ -25,10 +25,10 @@ public class Operacion {
         return a - b;
     }
 
-    public int Multiplicaion(int a, int b) throws DesbordaCapacidadException {
+    public static int Multiplicar(int a, int b) throws DesbordaCapacidadException {
         return a * b;
     }
-    public int Dividir(int a, int b) throws DesbordaCapacidadException {
+    public static int Dividir(int a, int b) throws DesbordaCapacidadException {
         return a/b;
     }
 }

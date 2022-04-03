@@ -1,5 +1,6 @@
 package Entrega10.src;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import javax.annotation.processing.SupportedOptions;
@@ -37,7 +38,7 @@ while (true) {
             } catch (InputMismatchException e) {
                 teclado.next();
             }
-            c = Operacion.Sumar(a,b):
+            c = Operacion.Suma(a,b);
             System.out.println("Resultado: "+ c);
             break;
         case 2: //multiplicar
@@ -53,7 +54,7 @@ while (true) {
             } catch (InputMismatchException e) {
                 teclado.next();
             }
-            c = Operacion.Multiplicar(a,b):
+            c = Operacion.Multiplicar(a,b);
             System.out.println("Resultado: "+ c);
             break;
         case 3: //Dividir
@@ -69,7 +70,7 @@ while (true) {
             } catch (InputMismatchException e) {
                 teclado.next();
             }
-            c = Operacion.Dividir(a,b):
+            c = Operacion.Dividir(a,b);
             System.out.println("Resultado: "+ c);
             break;
         case 4:
