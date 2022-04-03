@@ -16,7 +16,7 @@ public class Ejercicio1 {
             }
             try {
                 RaizCuadrada(numero);
-            } catch (RaizNegativaException e) {
+            } catch (RaizNegativaException e) { //control de la excepción en tiempo de ejecución
                 System.out.println("La raíz cuadrada no está definida para un número negativo");
             }
 
@@ -24,7 +24,7 @@ public class Ejercicio1 {
 
     }
 
-    private static void RaizCuadrada(double a) {
+    private static void RaizCuadrada(double a) { //creación del método que lanza la excepción
         if (a < 0) {
             throw new RaizNegativaException();
         } else {
