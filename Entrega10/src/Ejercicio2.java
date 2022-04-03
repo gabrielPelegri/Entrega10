@@ -26,13 +26,13 @@ public class Ejercicio2 {
                 case 1:// sumar
                     System.out.println("Introduce un número entero");
                     try {
-                        a = (int) teclado.nextDouble();
+                        a = teclado.nextInt();
                     } catch (InputMismatchException e) {
                         teclado.next();
                     }
                     System.out.println("Introduce otro número");
                     try {
-                        b = (int) teclado.nextDouble();
+                        b = teclado.nextInt();
                     } catch (InputMismatchException e) {
                         teclado.next();
                     }
@@ -42,13 +42,13 @@ public class Ejercicio2 {
                 case 2: // multiplicar
                     System.out.println("Introduce un número");
                     try {
-                        a = (int) teclado.nextDouble();
+                        a = teclado.nextInt();
                     } catch (InputMismatchException e) {
                         teclado.next();
                     }
                     System.out.println("Introduce otro unnúmero");
                     try {
-                        b = (int) teclado.nextDouble();
+                        b = teclado.nextInt();
                     } catch (InputMismatchException e) {
                         teclado.next();
                     }
@@ -58,13 +58,13 @@ public class Ejercicio2 {
                 case 3: // Dividir
                     System.out.println("Introduce un número");
                     try {
-                        a = (int) teclado.nextDouble();
+                        a = teclado.nextInt();
                     } catch (InputMismatchException e) {
                         teclado.next();
                     }
                     System.out.println("Introduce otro número");
                     try {
-                        b = (int) teclado.nextDouble();
+                        b = teclado.nextInt();
                     } catch (InputMismatchException e) {
                         teclado.next();
                     }
