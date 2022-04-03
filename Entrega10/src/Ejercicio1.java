@@ -3,6 +3,8 @@ package Entrega10.src;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import Entrega10.src.excepciones.RaizNegativaException;
+
 public class Ejercicio1 {
     public static void Lanzar(Scanner teclado) {
 

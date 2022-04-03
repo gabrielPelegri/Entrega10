@@ -1,4 +1,4 @@
-package Entrega10.src;
+package Entrega10.src.excepciones;
 
 public class RaizNegativaException extends RuntimeException {
     public RaizNegativaException(){
