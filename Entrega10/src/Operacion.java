@@ -136,6 +136,6 @@ public class Operacion {
     }
 
     public static void menu() {
-        System.out.println("+: suma | -:resta | *: multiplicación | /: división | s:salir");
+        System.out.println("+: suma | -: resta | *: multiplicación | /: división | s: salir");
     }
 }

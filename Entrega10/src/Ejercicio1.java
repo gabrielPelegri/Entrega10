@@ -9,8 +9,8 @@ public class Ejercicio1 {
     public static void Lanzar(Scanner teclado) {
 
         double numero = 0;
-        while (true) {
-            System.out.println("Introduce un número");
+        do {
+            System.out.println("Introduce un número o -1 para finalizar");
             try {
                 numero = teclado.nextDouble();
             } catch (InputMismatchException e) {
@@ -22,7 +22,7 @@ public class Ejercicio1 {
                 System.out.println("La raíz cuadrada no está definida para un número negativo");
             }
 
-        }
+        } while (numero != -1);
 
     }
 
