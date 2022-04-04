@@ -3,7 +3,8 @@ package Entrega10.src;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import javax.naming.ldap.SortKey;
+//import javax.naming.ldap.SortKey;
+// no es utilizado
 
 import Entrega10.src.excepciones.DesbordaCapacidadException;
 
@@ -40,6 +41,7 @@ public class Operacion {
         }
         String eleccion = "";
         int resultado;
+        double resuldouble;
         int salir = 0;
         while (salir == 0) {
 
@@ -59,8 +61,8 @@ public class Operacion {
                     System.out.println("Solución: " + resultado);
                     break;
                 case "/":
-                    resultado = Dividir(a, b);
-                    System.out.println("Solución: " + resultado);
+                    resuldouble = Dividir(a, b);
+                    System.out.println("Solución: " + resuldouble);
                     break;
                 case "d":
                     System.out.println("Saliendo...");
@@ -100,7 +102,7 @@ public class Operacion {
         }
     }
 
-    public static int Dividir(int a, int b) {
+    public static double Dividir(int a, int b) {
         if (a > 2147483647 || a < -2147483647 || b > 2147483647 || b < -2147483647) {
             throw new DesbordaCapacidadException(
                     "El valor introducido desborda las capacidades de esta calculadora. Inténtelo de nuevo");

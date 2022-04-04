@@ -1,6 +1,7 @@
 package Entrega10.src;
 
-import java.util.InputMismatchException;
+//import java.util.InputMismatchException;
+//no es utilizado
 import java.util.Scanner;
 
 public class Ejercicio2 {
