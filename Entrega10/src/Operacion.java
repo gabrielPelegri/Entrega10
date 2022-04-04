@@ -44,7 +44,7 @@ public class Operacion {
         while (salir == 0) {
 
             menu();
-            eleccion = teclado.nextLine();
+            eleccion = teclado.next();
             switch (eleccion) {
                 case "+":
                     resultado = Suma(a, b);
