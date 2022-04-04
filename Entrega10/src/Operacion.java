@@ -33,6 +33,7 @@ public class Operacion {
                 case "*":
                     resultado = Multiplicar(a, b);
                     System.out.println("Solución: " + resultado);
+                    salir = 1;
                     break;
                 case "/":
                     try {

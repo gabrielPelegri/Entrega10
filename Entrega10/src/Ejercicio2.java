@@ -28,7 +28,7 @@ public class Ejercicio2 {
                 b = Operacion.segundoValor(teclado);
                 break;
             } catch (DesbordaCapacidadException e) {
-                teclado.next();
+                
                 System.out.println("El valor desborda la capacidad de la calculadora, inténtelo de nuevo");
             }
         }
