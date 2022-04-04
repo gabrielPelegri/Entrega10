@@ -95,7 +95,7 @@ public class Operacion {
     }
 
     public static long primerValor(Scanner teclado) { // primer entero
-        System.out.println("Introduce un número entero");
+
         long a = 0;
         while (true) {
             try {
