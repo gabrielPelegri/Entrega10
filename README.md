@@ -1,3 +1,5 @@
+# Entrega10
+
 Ejercicios realizados por:
 
 - Gabriel Pelegri Riis
@@ -6,8 +8,11 @@ Ejercicios realizados por:
 
 - David César Moro Nieto
 
-Ejercicios Tema 10 de Técnicas de programación
-1. El cálculo de la raíz cuadrada
+Repositorio ubicado en: https://github.com/gabrielPelegri/Entrega10
+
+# Ejercicios Tema 10 de Técnicas de programación
+
+## 1. El cálculo de la raíz cuadrada
 Sea la función raizCuadrada() que calcula la raíz cuadrada del número que se pasa como argumento. Esta función lanza una excepción si su argumento es negativo. No se le pide que escriba esta función, se asume que ya existe.
 
 Escribir un algoritmo que calcule la raíz cuadrada de un número introducido por el usuario.
@@ -26,7 +31,7 @@ Introducir un valor: -3
 
 La raíz cuadrada no está definida para un número negativo.
 
-2. La calculadora en Java
+## 2. La calculadora en Java
 El objetivo es crear una mini calculadora que realice sumas, restas, multiplicaciones, divisiones enteras y con resto.
 
 Esta calculadora maneja enteros de tipo int. Con el tipo int, los valores deben estar entre -2.147.483.648 y 2.147.483.647. Si una variable de tipo int se inicializa a 2.000.000.000 y la variable se multiplica por dos, la variable contendrá: 294.967.296. Ha habido un "desbordamiento". Desafortunadamente, esto no causa un error ni una excepción.
