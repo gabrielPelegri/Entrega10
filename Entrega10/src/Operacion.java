@@ -61,8 +61,14 @@ public class Operacion {
                     System.out.println("Solución: " + resultado);
                     break;
                 case "/":
+                try{
                     resuldouble = Dividir(a, b);
                     System.out.println("Solución: " + resuldouble);
+                }
+                    catch(ArithmeticException error){
+                        System.out.println("No se puede dividir por 0");
+                    }
+                   // System.out.println("Solución: " + resuldouble);
                     break;
                 case "d":
                     System.out.println("Saliendo...");
@@ -103,12 +109,19 @@ public class Operacion {
     }
 
     public static double Dividir(int a, int b) {
+      //  try{
         if (a > 2147483647 || a < -2147483647 || b > 2147483647 || b < -2147483647) {
             throw new DesbordaCapacidadException(
                     "El valor introducido desborda las capacidades de esta calculadora. Inténtelo de nuevo");
         } else {
-            return a / b;
+            //double returner = (double) a/b;
+            return (double) a/b;
         }
+  //  }
+  //      catch(ArithmeticException error){
+   //         System.out.println("No se puede dividir por 0");
+  //          return 0;
+   //     }
     }
 
     public static void menu() {
