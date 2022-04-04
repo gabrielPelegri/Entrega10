@@ -9,36 +9,8 @@ import java.util.Scanner;
 import Entrega10.src.excepciones.DesbordaCapacidadException;
 
 public class Operacion {
-    public static void Operacion(Scanner teclado) {
+    public static void Operacion(Scanner teclado, long a, long b) {
 
-        long a = 0;
-        long b = 0;
-        while (true) {
-            System.out.println("Introduzca un número entero");
-            try {
-                a = teclado.nextLong();
-                break;
-            } catch (InputMismatchException e) {
-                teclado.next();
-            }
-        }
-        if (a > 2147483647 || a < -2147483647) {
-            throw new DesbordaCapacidadException(
-                    "Error por desbordamiento");
-        }
-        while (true) {
-            System.out.println("Introduzca otro número entero");
-            try {
-                b = teclado.nextLong();
-                break;
-            } catch (InputMismatchException e) {
-                teclado.next();
-            }
-        }
-        if (b > 2147483647 || b < -2147483647) {
-            throw new DesbordaCapacidadException(
-                    "Error por desbordamiento");
-        }
         String eleccion = "";
         int resultado;
         double resuldouble;
@@ -83,28 +55,24 @@ public class Operacion {
     }
 
     public static int Suma(long a, long b) {
-        if (a > 2147483647 || a < -2147483647 || b > 2147483647 || b < -2147483647) {
-            throw new DesbordaCapacidadException(
-                    "El valor introducido desborda las capacidades de esta calculadora. Inténtelo de nuevo");
+        if (a + b > 2147483647 || a + b < -2147483647) {
+            throw new DesbordaCapacidadException();
         } else {
-
             return (int) (a + b);
         }
     }
 
     public static int Resta(long a, long b) {
-        if (a > 2147483647 || a < -2147483647 || b > 2147483647 || b < -2147483647) {
-            throw new DesbordaCapacidadException(
-                    "El valor introducido desborda las capacidades de esta calculadora. Inténtelo de nuevo");
+        if (a - b > 2147483647 || a - b < -2147483647) {
+            throw new DesbordaCapacidadException();
         } else {
             return (int) (a - b);
         }
     }
 
     public static int Multiplicar(long a, long b) {
-        if (a > 2147483647 || a < -2147483647 || b > 2147483647 || b < -2147483647) {
-            throw new DesbordaCapacidadException(
-                    "El valor introducido desborda las capacidades de esta calculadora. Inténtelo de nuevo");
+        if (a * b > 2147483647 || a * b < -2147483647) {
+            throw new DesbordaCapacidadException();
         } else {
             return (int) (a * b);
         }
@@ -112,18 +80,58 @@ public class Operacion {
 
     public static double Dividir(long a, long b) {
         // try{
-        if (a > 2147483647 || a < -2147483647 || b > 2147483647 || b < -2147483647) {
+        if (a / b > 2147483647 || a / b < -2147483647) {
             throw new DesbordaCapacidadException(
-                    "El valor introducido desborda las capacidades de esta calculadora. Inténtelo de nuevo");
+                    "Error por desbordamiento");
         } else {
             // double returner = (double) a/b;
-            return (double) a / b;
+            return (int) a / b;
         }
         // }
         // catch(ArithmeticException error){
         // System.out.println("No se puede dividir por 0");
         // return 0;
         // }
+    }
+
+    public static long primerValor(Scanner teclado) { // primer entero
+        System.out.println("Introduce un número entero");
+        long a = 0;
+        while (true) {
+            try {
+                a = teclado.nextLong();
+                break;
+            } catch (InputMismatchException e) {
+                teclado.next();
+            }
+        }
+        if (a > 2147483647 || a < -2147483647) {
+            throw new DesbordaCapacidadException("Error por desbordamiento");
+        } else {
+
+            return a;
+        }
+
+    }
+
+    public static long segundoValor(Scanner teclado) { // segundo entero
+
+        long a = 0;
+        while (true) {
+            try {
+                a = teclado.nextLong();
+                break;
+            } catch (InputMismatchException e) {
+                teclado.next();
+            }
+        }
+        if (a > 2147483647 || a < -2147483647) {
+            throw new DesbordaCapacidadException("Error por desbordamiento");
+        } else {
+
+            return a;
+        }
+
     }
 
     public static void menu() {
