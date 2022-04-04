@@ -24,7 +24,7 @@ public class Operacion {
         }
         if (a > 2147483647 || a < -2147483647) {
             throw new DesbordaCapacidadException(
-                    "El valor introducido desborda las capacidades de esta calculadora. Inténtelo de nuevo");
+                    "Error por desbordamiento");
         }
         while (true) {
             System.out.println("Introduzca otro número entero");
@@ -37,7 +37,7 @@ public class Operacion {
         }
         if (b > 2147483647 || b < -2147483647) {
             throw new DesbordaCapacidadException(
-                    "El valor introducido desborda las capacidades de esta calculadora. Inténtelo de nuevo");
+                    "Error por desbordamiento");
         }
         String eleccion = "";
         int resultado;
@@ -127,6 +127,6 @@ public class Operacion {
     }
 
     public static void menu() {
-        System.out.println("+: suma | -:resta | *: multiplicación | /: división | d:salir");
+        System.out.println("+: suma | -:resta | *: multiplicación | /: división | s:salir");
     }
 }
