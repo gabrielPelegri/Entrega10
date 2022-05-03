@@ -9,8 +9,8 @@ public class Ejercicio1 {
     public static void Lanzar(Scanner teclado) {
 
         double numero = 0;
-        while (true) {
-            System.out.println("Introduce un número");
+        do {
+            System.out.println("Introduce un número o -1 para finalizar");
             try {
                 numero = teclado.nextDouble();
             } catch (InputMismatchException e) {
@@ -18,15 +18,15 @@ public class Ejercicio1 {
             }
             try {
                 RaizCuadrada(numero);
-            } catch (RaizNegativaException e) { //control de la excepción en tiempo de ejecución
+            } catch (RaizNegativaException e) { // control de la excepción en tiempo de ejecución
                 System.out.println("La raíz cuadrada no está definida para un número negativo");
             }
 
-        }
+        } while (numero != -1);
 
     }
 
-    private static void RaizCuadrada(double a) { //creación del método que lanza la excepción
+    private static void RaizCuadrada(double a) { // creación del método que lanza la excepción
         if (a < 0) {
             throw new RaizNegativaException();
         } else {
